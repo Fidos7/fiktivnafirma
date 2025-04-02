@@ -40,7 +40,7 @@
         <p class="fw-bold text-black" style="font-size: 1.7rem;">Buď o krok napřed. <br> Styl, který nikdy nevyjde z módy.</p>
         <div class="d-flex justify-content-center gap-4">
           <a class="nav-link border-black bg-black text-white rounded-3 p-2 px-5 shadow" href="#aboutus">O nás</a>
-          <a class="nav-link border border-dark border-4 text-black rounded-3 p-1 px-3 shadow" href="#">Nabídka Služeb</a>
+          <a class="nav-link border border-dark border-4 text-black rounded-3 p-1 px-3 shadow" href="#products">Nabídka Služeb</a>
         </div>
       </div>
     </div>
@@ -79,7 +79,7 @@
   </div>
 </section>
 
-<section class="container mt-5">
+<section id="products" class="container mt-5">
   <div class="row">
     <div class="col-md-6 col-lg-4 mb-3">
       <div class="card"><img src="a-blue-hoodie-hanging-on-a-clothesline-photo.jpeg" class="card-img-top" alt="asfd">
@@ -109,13 +109,13 @@
       </div>
     </div>  
   </div>
-  <div><h2 class="fs-5 mt-2 text-center border border-dark rounded-3 border-2 py-3">Každý kousek v naší kolekci je pečlivě vybrán, aby ti nabídl nejen kvalitu a pohodlí, ale i styl, který podtrhne tvou osobnost. Ať už hledáš streetwear, elegantní outfit nebo pohodový casual look, u nás najdeš to pravé.</h2></div>
+  <div><h2 class="fs-5 mt-2 text-center border  rounded-3 border-2 py-2">Každý kousek v naší kolekci je pečlivě vybrán, aby ti nabídl nejen kvalitu a pohodlí, ale i styl, který podtrhne tvou osobnost. Ať už hledáš streetwear, elegantní outfit nebo pohodový casual look, u nás najdeš to pravé.</h2></div>
   <div><p class="text-center mt-3 fs-4">Více produktú najdeš zde:</p></div>
-  <div class="text-center mb-5"><button class="rounded-3 border-1 bg-info fs-5">Zobrazit více produktú</button></div>
+  <div class="text-center mb-5"><a href="#" class="rounded-3 p-2 text-white text-decoration-none border-1 bg-info fs-5">Zobrazit více produktú</a></div>
 </section>
-<section class="bg-secondary">
-  <div class="container">
-    <h2 class="mb-4 text-white">Kontaktní formulář</h2>
+<section class="bg-secondary py-5">
+  <div class="container mb-5">
+    <h2 class="mb-4 text-center text-white">Kontaktní formulář</h2>
     <form>
       <div class="row mb-3">
         <div class="col-md-6">
@@ -131,10 +131,62 @@
         <label for="message" class="form-label text-white">Zpráva</label>
         <textarea class="form-control" id="message" rows="4" placeholder="Vaše zpráva..."></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Odeslat</button>
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-info px-3 w-100">Odeslat</button>
+      </div>
     </form>
   </div>
 </section>
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Často kladené dotazy (FAQ)</h2>
+
+    <div class="accordion mb-5" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Jak mohu kontaktovat zákaznickou podporu?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body shadow">
+            Můžete nás kontaktovat prostřednictvím e-mailu na podpora@nasadomena.cz nebo zavolat na číslo +420 123 456 789.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Jak změním své heslo?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Pro změnu hesla se přihlaste do svého účtu a přejděte do sekce "Nastavení" > "Změnit heslo".
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Jak mohu sledovat svou objednávku?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Pro sledování objednávky se přihlaste do svého účtu a přejděte na stránku "Moje objednávky", kde naleznete stav vašich objednávek.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-secondary text-white py-2 rounded-3">
+  <div><p class="d-flex justify-content-center align-items-center mt-3 fs-4">Adrián Kozáček</p></div>
+</footer>
+
+
+
 
 
 
