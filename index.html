@@ -17,30 +17,38 @@
   <div class="position-absolute top-0 start-0 w-100 h-100">
     <img src="Artboard%201.png" alt="Background Image" class="w-100 h-100 position-absolute top-0 start-0" style="z-index: 1;"/>
 
-    <nav class="navbar navbar-expand-lg position-absolute w-50 bg-transparent border border-dark border-3 rounded-3 mt-2 shadow" style="z-index: 10; left: 50%; transform: translateX(-50%);">
+    <nav class="navbar w-50 navbar-expand-lg navbar-light bg-transparent border border-dark border-3 rounded-3 mt-2 shadow" style="z-index: 10; left: 50%; transform: translateX(-50%);">
       <div class="container">
-        <a class="navbar-brand text-dark   rounded-3 px-5" href="#">TrendBox</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <a class="navbar-brand text-dark rounded-3 px-5 mx-auto d-flex" href="#">TrendBox</a>
+
+        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto gap-3">
-            <li class="nav-item"><a href="index.html" class="nav-link text-dark rounded-3 ">Hlavní Stránka</a></li>
-            <li class="nav-item"><a href="items.html" class="nav-link text-dark rounded-3 px-4 ">Produkty</a></li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-dark rounded-3">Hlavní Stránka</a>
+            </li>
+            <li class="nav-item">
+              <a href="items.html" class="nav-link text-dark rounded-3 px-4">Produkty</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
+
   </div>
 
   <div class="container-fluid h-100 d-flex justify-content-center align-items-center position-relative" style="z-index: 3;">
     <div class="row text-center">
       <div class="col-12">
-        <p class="fw-bold text-black" style="font-size: 8rem;">TrendBox</p>
-        <p class="fw-bold text-black" style="font-size: 1.7rem;">Buď o krok napřed. <br> Styl, který nikdy nevyjde z módy.</p>
+        <p class="fw-bold text-black trendbox-title" style="font-size: 11vw">TrendBox</p>
+        <p class="fw-bold text-black" style="font-size: 2.5vw;">Buď o krok napřed. <br> Styl, který nikdy nevyjde z módy.</p>
         <div class="d-flex justify-content-center gap-4">
-          <a class="nav-link border-black bg-black text-white rounded-3 p-2 px-5 shadow" href="#aboutus">O nás</a>
-          <a class="nav-link border border-dark border-4 text-black rounded-3 p-1 px-3 shadow" href="#products">Nabídka Služeb</a>
+          <a class="nav-link border-black bg-black text-white rounded-3 p-2 px-5 shadow hide " href="#aboutus">O nás</a>
+          <a class="nav-link border border-dark border-4 text-black rounded-3 p-1 px-3 shadow hide" href="#products">Nabídka Služeb</a>
         </div>
       </div>
     </div>
@@ -64,8 +72,8 @@
             <div><p class="fs-5 m-1 text-white">ZKUŠENOSTI (LET)</p></div>
             <div><p class="fs-1 text-info">10+</p></div>
           </div>
-          <div class="bg-white rounded-3" style="width: 2px; height: 120px"></div>
-          <div class="text-center">
+          <div class="bg-white rounded-3 hide" style="width: 2px; height: 120px"></div>
+          <div class="text-center hide">
             <div><p class="fs-5 m-1 text-white">RŮZNÝCH PRODUKTŮ</p></div>
             <div><p class="fs-1 text-info">300+</p></div>
           </div>
@@ -87,7 +95,7 @@
         <div class="card-body">
           <h5 class="card-title fs-3">UrbanFlex Hoodie</h5>
           <p class="card-text">Stylová oversized mikina s minimalistickým designem, ideální na každý den jenom za 1 499 Kč.</p>
-          <a href="#" class="btn btn-info">Koupit</a>
+          <a href="items.html/#products" class="btn btn-info">Koupit</a>
           <a href="items.html" class="btn fs-6">Zobrazit více</a>
         </div>
       </div>
@@ -98,7 +106,7 @@
         <div class="card-body">
           <h5 class="card-title fs-3">SF Cargo Pants</h5>
           <p class="card-text">Moderní cargo kalhoty s odolným materiálem a praktickými kapsami na zip za 1 199 Kč.</p>
-          <a href="#" class="btn btn-info">Koupit</a>
+          <a href="items.html/#products" class="btn btn-info">Koupit</a>
           <a href="items.html" class="btn fs-6">Zobrazit více</a>
         </div>
       </div>
@@ -109,7 +117,7 @@
         <div class="card-body">
           <h5 class="card-title fs-3">TB Velocity Sneakers</h5>
           <p class="card-text">Lehoučké futuristické tenisky s prodyšnou síťovinou a stylovým vzhledem za 2 299 Kč.</p>
-          <a href="#" class="btn btn-info">Koupit</a>
+          <a href="items.html/#products" class="btn btn-info">Koupit</a>
           <a href="items.html" class="btn fs-6">Zobrazit více</a>
         </div>
       </div>
@@ -266,6 +274,12 @@
     font-size: 16px;
     cursor: pointer;
   }
+  @media (max-width: 450px) {
+    .hide {
+      display: none !important;
+    }
+  }
+
 
 </style>
 </html>

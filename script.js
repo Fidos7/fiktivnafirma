@@ -23,7 +23,6 @@ const products = [
     }
 ];
 
-// Funkce pro otevření modálního okna
 function openModal(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
@@ -35,15 +34,13 @@ function openModal(productId) {
     }
 }
 
-// Funkce pro zavření modálního okna
+
 function closeModal() {
     document.getElementById("productModal").style.display = "none";
 }
 
-// Event listener pro zavření modálního okna při kliknutí na "X"
 document.querySelector(".close").addEventListener("click", closeModal);
 
-// Event listener pro produkty
 const productElements = document.querySelectorAll(".product");
 productElements.forEach(productElement => {
     productElement.addEventListener("click", () => {
